@@ -6,24 +6,20 @@
 .background{
     width: 1024px;
     height: 600px;
-    background-image: url('../images/background.png');
     padding-left: 20px;
     padding-top: 20px;
 }
 .outerbox{
     width: 808px;
     height: 544px;
-    background-image: url('../images/outerbox.png');
+    padding: 32px;
+
 }
 .wrapper{
     display: flex;
     flex-direction: row;
-    padding-left: 32px;
-    padding-top: 32px;
 }
 .wrapper__left{
-    width: 208px;   
-    height: 472px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -48,8 +44,8 @@
 }
 
 .wrapper__left__body{
-    width: 208px;
-    height: 440px;
+    width: 250px;
+    height: 600px;
     display: flex;
     flex-direction:column;
     justify-content: space-between;
@@ -95,8 +91,6 @@
 }
 
 .wrapper__right{
-    width: 524px;
-    height: 472px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -105,7 +99,7 @@
 }
 
 .wrapper__right__header{
-    padding-top: 10px;
+    padding-top: 20px;
     width: 510px;
     display: flex;
     justify-content: space-between;
@@ -125,8 +119,8 @@
 }
 
 .wrapper__right__body{
-    width: 524px;
-    height: 430px;
+    width: 600px;
+    height: 600px;
     background-color: white;
     border: 1px solid gray;
     border-radius: 15px;
