@@ -1,68 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/cyworld.css">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/cyworld.css">
+    <title>Document</title>
 </head>
+
 <body>
-  <div class="background">
-    <div class="outerbox">
-        <div class="wrapper">
-            <div class="wrapper__left">
-                <div class="wrapper__left__header">
-                    <div class="today">
-                        TODAY <span class="zero">0</span> | TOTAL <span class="count">12345</span> 
-                    </div>
-                </div>
-                <div class="wrapper__left__body">
-                    <div class="header">
-                        <div class=headerGrey>
-                        </div>
-                        <div class="line"></div>
-                        <div class="profileWrapper">
-                            <div class="profile">
-                                <i class="fas fa-user"></i> 이름 
-                            </div>
-                            <div class="profile">
-                                <i class="fas fa-phone-alt"></i> Phone
-                            </div>
-                            <div class="profile">
-                                <i class="fas fa-envelope"></i> E-mail
-                            </div>
-                            <div class="profile">
-                                <i class="fas fa-star"></i> Instagram
-                            </div>
+    <div class="background">
+        <div class="outerbox">
+            <div class="wrapper">
+                <div class="wrapper__left">
+                    <div class="wrapper__left__header">
+                        <div class="today">
+                            TODAY <span class="zero">0</span> | TOTAL <span class="count">12345</span>
                         </div>
                     </div>
-                    <div class="footer">
-                        <div class="feelWrapper">
-                            <div class="feel">오늘의 기분</div>
-                            <select class="feelSelect">
-                                <option>기쁨 😀</option>
-                                <option>슬픔 😭</option>
-                                <option>분노 😡</option>
-                                <option>행복 😊</option>
-                                <option>귀찮 😒</option>
-                            </select>
+                    <div class="wrapper__left__body">
+                        <div class="header">
+                            <div class=headerGrey>
+                            </div>
+                            <div class="line"></div>
+                            <div class="profileWrapper">
+                                <div class="profile">
+                                    <i class="fas fa-user"></i> 이름
+                                </div>
+                                <div class="profile">
+                                    <i class="fas fa-phone-alt"></i> Phone
+                                </div>
+                                <div class="profile">
+                                    <i class="fas fa-envelope"></i> E-mail
+                                </div>
+                                <div class="profile">
+                                    <i class="fas fa-star"></i> Instagram
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <div class="feelWrapper">
+                                <div class="feel">일촌 파도타기</div>
+                                <select class="feelSelect">
+                                    <option value=""></option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="wrapper__right">
-                <div class="wrapper__right__header">
-                    <div class="wrapper__right__title">사이좋은 사람들, 싸이월드</div>
-                    <div class="wrapper__right__setting">사생활보호설정<i class="fas fa-caret-right bbbb"></i></div>
-                </div>
-                <div class="wrapper__right__body">
-                    <iframe src="home.html"></iframe>
+                <div class="wrapper__right">
+                    <div class="wrapper__right__header">
+                        <div class="wrapper__right__title">사이좋은 사람들, 싸이월드</div>
+                        <div class="wrapper__right__setting">사생활보호설정<i class="fas fa-caret-right bbbb"></i></div>
+                    </div>
+                    <div class="wrapper__right__body">
+                    </div>
+                    <ul class="menu_wrap">
+                        <li onClick="location.href='<?=G5_URL?>'">
+                            <a class="menu_img">
+                                <span>Main</span>
+                            </a>
+                        </li>
+                        <li onClick="location.href='<?=G5_URL?>/member'">
+                            <a class="menu_img">
+                                <span>PROFILE</span>
+                            </a>
+                        </li>
+                        <li onClick="location.href='<?=G5_URL?>/bbs/board.php?bo_table=lover'">
+                            <a class="menu_img">
+                                <span>Lover</span>
+                            </a>
+                        </li>
+                        <li onClick="location.href='<?=G5_URL?>/bbs/board.php?bo_table=mmb'">
+                            <a class="menu_img">
+                                <span>MMB</span>
+                            </a>
+                        </li>
+                        <li onClick="location.href='<?=G5_URL?>/bbs/board.php?bo_table=commu'">
+                            <a class="menu_img">
+                                <span>LOAD</span>
+                            </a>
+                        </li>
+                        <li onClick="location.href='<?=G5_URL?>/bbs/board.php?bo_table=memo'">
+                            <a class="menu_img">
+                                <span>MEMO</span>
+                            </a>
+                        </li>
+                        <li onClick="location.href='<?=G5_URL?>/bbs/board.php?bo_table=CMMS'">
+                            <a class="menu_img">
+                                <span>Commission</span>
+                            </a>
+                        </li>
+                        <li onClick="location.href='<?=G5_URL?>/bbs/board.php?bo_table=trpg'">
+                            <a class="menu_img">
+                                <span>TRPG</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- https://cocoon1787.tistory.com/693 -->
+    <!-- https://cocoon1787.tistory.com/693 -->
 </body>
+
 </html>

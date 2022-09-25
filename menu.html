@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <header id="header" class="open" >
+    <!-- mouse effect -->
+    
+    <script src="../js/mouse.js"></script>
+    
+        <div id="gnb">
+          <?
+          $menu_content = get_site_content('site_menu');
+          if($menu_content) { 
+            echo $menu_content;
+          } else { 
+          ?>
+          
+        <ul class="h_menu_ul">
+       
+          <li onClick="location.href='<?=G5_URL?>'" >
+          <a class="menu_img">
+            <img src="../img/kindpng.png" alt="">
+          <span>Main</span>
+          </a>
+          </li>
+    
+          <li onClick="location.href='<?=G5_URL?>/member'">
+          <a class="menu_img" >
+          <img src="../img/kindpng.png" alt="">
+            <span>PROFILE</span>
+          </a>
+          </li>
+       
+          <li onClick="location.href='<?=G5_URL?>/bbs/board.php?bo_table=lover'">
+          <a class="menu_img" >
+          <img src="../img/kindpng.png" alt="">  
+          <span>Lover</span>
+        </a>
+          </li>
+    
+    
+          <li onClick="location.href='<?=G5_URL?>/bbs/board.php?bo_table=mmb'">
+          <a class="menu_img" >
+          <img src="../img/kindpng.png" alt="">
+          <span>MMB</span>
+        </a>
+          </li>
+    
+          <li onClick="location.href='<?=G5_URL?>/bbs/board.php?bo_table=commu'">
+          <a class="menu_img" >
+          <img src="../img/kindpng.png" alt="">
+          <span>LOAD</span>
+        </a>
+          </li>
+    
+          <li onClick="location.href='<?=G5_URL?>/bbs/board.php?bo_table=memo'">
+          <a class="menu_img" >
+          <img src="../img/kindpng.png" alt="">
+          <span>MEMO</span>
+           </a>
+          </li>
+    
+          <li onClick="location.href='<?=G5_URL?>/bbs/board.php?bo_table=CMMS'">
+          <a class="menu_img" >
+          <img src="../img/kindpng.png" alt="">
+          <span>Commission</span>
+        </a>
+          </li>
+    
+          
+          <li onClick="location.href='<?=G5_URL?>/bbs/board.php?bo_table=trpg'">
+          <a class="menu_img" >
+          <img src="../img/kindpng.png" alt="">
+            <span>TRPG</span>
+          </a>
+          </li>
+    
+        </ul>
+          <?php } ?>  
+            <? include(G5_PATH."/templete/txt.bgm.php"); ?>
+        </div>
+        <div class="admin_wrap">
+        <? if($is_admin){?> <a href="<?=G5_URL?>/adm" class="admin"> ADMIN</a> <? } ?> 
+        <div id="log_in">
+        <a href="<?php if(!$is_member){ echo G5_BBS_URL."/login.php"; }else{ echo G5_BBS_URL."/logout.php";} ?>" >
+           <p><?php if(!$is_member){ echo 'LOGIN'; }else{ echo 'LOGOUT'; } ?></p>
+        </a>	
+        </div>
+        </div>
+    </header>
+</body>
+</html>
