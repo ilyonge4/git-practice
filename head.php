@@ -186,16 +186,13 @@ $main_link=get_main_link();
 												<div class="main_txt">
 												<div class="profileWrapper">
                                 <div class="profile">
-                                    <i class="fas fa-user"></i> 이름
+                                    <i class="fas fa-user"></i> babbietien
                                 </div>
                                 <div class="profile">
-                                    <i class="fas fa-phone-alt"></i> Phone
+																<i class="fa-brands fa-twitter"></i> @babie_draw
                                 </div>
                                 <div class="profile">
-                                    <i class="fas fa-envelope"></i> E-mail
-                                </div>
-                                <div class="profile">
-                                    <i class="fas fa-star"></i> Instagram
+																<i class="fa-solid fa-shrimp"></i> 백업용 갠홈
                                 </div>
                             </div>
                             <!--<a href="http://babbietien.dothome.co.kr/" style="display:block; margin:20px 0 20px;">
@@ -236,6 +233,11 @@ $main_link=get_main_link();
                         <li onClick="location.href='<?=G5_URL?>'">
                             <a class="menu_img">
                                 <span>PROFILE</span>
+                            </a>
+                        </li>
+												<li onClick="location.href='<?=G5_URL?>'">
+                            <a class="menu_img">
+                                <span>Character</span>
                             </a>
                         </li>
                         <li onClick="location.href='<?=G5_URL?>/bbs/board.php?bo_table=lover'">
