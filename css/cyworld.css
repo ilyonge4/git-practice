@@ -35,7 +35,7 @@
 }
 
 .wrapper__left::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 80%;
   height: 600px;
@@ -49,7 +49,7 @@
 }
 
 .wrapper__right::after {
-  content: '';
+  content: "";
   width: 90%;
   height: 600px;
   top: 0;
@@ -82,7 +82,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid #ff899d;
+  border: 1px solid rgb(255, 137, 157);
   border-radius: 15px;
   padding-top: 20px;
   padding-bottom: 31px;
@@ -164,7 +164,7 @@
   width: 680px;
   height: 600px;
   background-color: white;
-  border: 1px solid #ff899d;
+  border: 1px solid rgb(255, 137, 157);
   border-radius: 15px;
   overflow: scroll;
 }
@@ -182,7 +182,6 @@
   right: -50px;
   top: 70px;
 }
-
 .menu_wrap li {
   width: 70px;
   height: 35px;
@@ -192,14 +191,12 @@
   vertical-align: center;
   padding-top: 10px;
   border-radius: 5px;
-  border: 1px solid #ff899d;
+  border: 1px solid rgb(255, 137, 157);
   font-size: 15px;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
   border-left: none;
 }
-
 .menu_wrap li a span {
   font-size: 12px;
 }
-/*# sourceMappingURL=cyworld.css.map */

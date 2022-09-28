@@ -1,0 +1,50 @@
+.profill_wrap {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.toggle_menu,
+.toggle_menu2 {
+  width: 350px;
+}
+.toggle_menu .toggletit,
+.toggle_menu2 .toggletit {
+  background-color: aliceblue;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 12px;
+  padding: 2px 0;
+}
+.toggle_menu ul,
+.toggle_menu2 ul {
+  display: none;
+  width: 300px;
+  margin-left: 10px;
+  text-align: center;
+  font-size: 10px;
+  margin-bottom: 50px;
+  border-left: 2px solid rgb(255, 174, 174);
+}
+.toggle_menu ul li,
+.toggle_menu2 ul li {
+  padding: 1.5px 0;
+}
+.toggle_menu ul .tg_year,
+.toggle_menu2 ul .tg_year {
+  margin: 10px 0;
+  font-weight: 900;
+  position: relative;
+  z-index: 1;
+}
+.toggle_menu ul .tg_year::before,
+.toggle_menu2 ul .tg_year::before {
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  bottom: 0;
+  background-color: rgb(255, 199, 199);
+}
