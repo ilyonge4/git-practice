@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/toggle.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="toggle_menu">
+        <p class="toggletit">Running Community</p>
+        <ul class="toggle_txt">
+            <li class="tg_year">2022</li>
+            <li>어쩌구 저쩌구</li>
+            <li class="tg_year">2022</li>
+            <li>어쩌구 저쩌구</li>
+            <li>어쩌구 저쩌구</li>
+            <li class="tg_year">2022</li>
+            <li>어쩌구 저쩌구</li>
+            <li>어쩌구 저쩌구</li>
+        </ul>
+    </div>
+    <div class="toggle_menu2">
+        <p class="toggletit">Running Community</p>
+        <ul class="toggle_txt2">
+            <li class="tg_year">2022</li>
+            <li>어쩌구 저쩌구</li>
+            <li class="tg_year">2022</li>
+            <li>어쩌구 저쩌구</li>
+            <li>어쩌구 저쩌구</li>
+            <li class="tg_year">2022</li>
+            <li>어쩌구 저쩌구</li>
+            <li>어쩌구 저쩌구</li>
+        </ul>
+    </div>
+
+    <script>
+        $(function(){
+            $('.toggle_menu').click(function(){
+                $('.toggle_txt').slideToggle();
+            })
+            $('.toggle_menu2').click(function(){
+                $('.toggle_txt2').slideToggle();
+            })
+
+        });
+    </script>
+
+
+</body>
+
+</html>
